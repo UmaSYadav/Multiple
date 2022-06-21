@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SprController {
 
-	@Value("server.port") private String vPort;
+	@Value("${server.port}") private String vPort;
 	
 	@GetMapping("/test")
 	public void testActuator() {
